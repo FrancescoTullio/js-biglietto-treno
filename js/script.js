@@ -5,33 +5,28 @@ let prezzo;
 
 eta = prompt("dimmi la tua età espressa in numeri");
 
-if (!isNaN(eta)){
+if (!isNaN(eta)) {
 
     distanza = prompt("dimmi quanti chilometri devi fare espressa in numeri");
 
-    if(!isNaN(distanza)){
-
+    if (!isNaN(distanza)) {
+ 
         prezzo = distanza * 0.21;
 
-        if(eta >= 65)
-        {
+        if (eta >= 65) {
             prezzo = prezzo - ((prezzo / 100) * 40);
-            console.log(prezzo.toFixed(2));
-        }
-        else if(eta < 18)
-        {
+            console.log("il prezzo è di " + prezzo.toFixed(2));
+        } else if (eta < 18) {
             prezzo = prezzo - ((prezzo / 100) * 20);
             console.log(prezzo.toFixed(2));
-        }
-        else
-        {
+        } else {
             console.log(prezzo.toFixed(2));
         }
 
-    } else{
-        console.log("ATTENZIONE hai scritto la tua distanza non a numeri, ricarica la pagina e riprova, ricominciando dalla tua età");
+    } else {
+        console.log("ATTENZIONE hai scritto la tua distanza non a numeri, ricarica la pagina e riprova, ricominciando dalla tua età.");
     }
 
-} else{
+} else {
     console.log("ATTENZIONE hai scritto la tua età non a numeri, ricarica la pagina e riprova.");
 }
