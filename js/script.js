@@ -3,11 +3,11 @@ let distanza;
 let prezzo;
 
 
-eta = pront("dimmi la tua età espressa in numeri");
+eta = prompt("dimmi la tua età espressa in numeri");
 
 if (!isNaN(eta)){
 
-    distanza = pront("dimmi quanti chilometri devi fare espressa in numeri");
+    distanza = prompt("dimmi quanti chilometri devi fare espressa in numeri");
 
     if(!isNaN(distanza)){
 
